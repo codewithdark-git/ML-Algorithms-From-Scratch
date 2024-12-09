@@ -10,8 +10,12 @@ This repository aims to provide clear, well-documented implementations of machin
 
 ## 🗂️ Algorithms Included
 - Linear Regression
-  - Implementation from scratch with gradient descent
-  - scikit-learn implementation with model evaluation
+  - Methods:
+    - Gradient Descent
+    - Normal Equation
+  - Simple Linear Regression
+  - Multiple Linear Regression
+     
 - More algorithms coming soon:
   - Logistic Regression
   - Decision Trees
