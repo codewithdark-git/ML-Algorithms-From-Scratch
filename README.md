@@ -17,7 +17,9 @@ This repository aims to provide clear, well-documented implementations of machin
   - Multiple Linear Regression
   - Polynomial Regression
 - Gradient Descent
-         nnn    - More algorithms coming soon:
+  - Batch Gradient Descent
+
+- More algorithms coming soon:
   - Gradient Descent
   - Logistic Regression
   - Decision Trees
