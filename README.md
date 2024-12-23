@@ -15,8 +15,10 @@ This repository aims to provide clear, well-documented implementations of machin
     - Normal Equation
   - Simple Linear Regression
   - Multiple Linear Regression
-     
-- More algorithms coming soon:
+  - Polynomial Regression
+- Gradient Descent
+         nnn    - More algorithms coming soon:
+  - Gradient Descent
   - Logistic Regression
   - Decision Trees
   - Neural Networks
