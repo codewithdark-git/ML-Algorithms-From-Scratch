@@ -18,6 +18,9 @@ This repository aims to provide clear, well-documented implementations of machin
   - Polynomial Regression
 - Gradient Descent
   - Batch Gradient Descent
+- Neural Networks
+  - Neural Network from Scratch
+
 
 - More algorithms coming soon:
   - Gradient Descent
