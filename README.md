@@ -18,13 +18,13 @@ This repository aims to provide clear, well-documented implementations of machin
   - Polynomial Regression
 - Gradient Descent
   - Batch Gradient Descent
+  - Stochastic Gradient Descent
 - Neural Networks
   - Neural Network from Scratch
 - Decision Tree
 
 
 - More algorithms coming soon:
-  - Gradient Descent
   - Logistic Regression
   - Support Vector Machines
   - K-means Clustering
