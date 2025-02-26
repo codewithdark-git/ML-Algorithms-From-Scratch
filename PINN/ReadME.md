@@ -4,11 +4,11 @@
 
 In this experiment, we compare **Physics-Informed Neural Networks (PINNs)** and **Artificial Neural Networks (ANNs)** for solving the **1D Heat Equation**:
 
-\[
+$$
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
-\]
+$$
 
-where \( u(x, t) \) represents the heat distribution, and \( \alpha \) is the diffusion coefficient.
+where $u(x, t)$ represents the heat distribution, and $\alpha$ is the diffusion coefficient.
 
 ### 🔹 What is PINN?
 PINNs use **both data and physics constraints** (e.g., differential equations) to improve learning.
