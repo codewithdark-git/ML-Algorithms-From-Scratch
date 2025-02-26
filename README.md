@@ -22,6 +22,7 @@ This repository aims to provide clear, well-documented implementations of machin
 - Neural Networks
   - Neural Network from Scratch
 - Decision Tree
+- PINN (Physics Inform Neural Network)
 
 
 - More algorithms coming soon:
