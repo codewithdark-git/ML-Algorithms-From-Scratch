@@ -19,19 +19,20 @@ This repository aims to provide clear, well-documented implementations of machin
 - Gradient Descent
   - Batch Gradient Descent
   - Stochastic Gradient Descent
+- Logistic Regression
 - Neural Networks
   - Neural Network from Scratch
 - Decision Tree
 - [Random-Forest](https://github.com/codewithdark-git/Build-Random-Forest-From-scratch.git)
-- PINN (Physics Inform Neural Network)
+- PINN (Physics-Informed Neural Network)
 
 
 - More algorithms coming soon:
-  - Logistic Regression
   - Support Vector Machines
   - K-means Clustering
   - Naive Bayes
   - Dimensionality Reduction
+  - Gaussian Mixture
 
 ## 📚 Features
 - Detailed Jupyter notebooks with step-by-step explanations
