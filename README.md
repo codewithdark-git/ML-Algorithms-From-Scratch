@@ -25,10 +25,9 @@ This repository aims to provide clear, well-documented implementations of machin
 - Decision Tree
 - [Random-Forest](https://github.com/codewithdark-git/Build-Random-Forest-From-scratch.git)
 - PINN (Physics-Informed Neural Network)
-
+- Support Vector Machines
 
 - More algorithms coming soon:
-  - Support Vector Machines
   - K-means Clustering
   - Naive Bayes
   - Dimensionality Reduction
