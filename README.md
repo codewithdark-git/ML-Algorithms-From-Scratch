@@ -22,6 +22,7 @@ This repository aims to provide clear, well-documented implementations of machin
 - Neural Networks
   - Neural Network from Scratch
 - Decision Tree
+- [Random-Forest](https://github.com/codewithdark-git/Build-Random-Forest-From-scratch.git)
 - PINN (Physics Inform Neural Network)
 
 
