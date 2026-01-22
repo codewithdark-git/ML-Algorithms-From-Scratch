@@ -26,12 +26,10 @@ This repository aims to provide clear, well-documented implementations of machin
 - [Random-Forest](https://github.com/codewithdark-git/Build-Random-Forest-From-scratch.git)
 - PINN (Physics-Informed Neural Network)
 - Support Vector Machines
-
-- More algorithms coming soon:
-  - K-means Clustering
-  - Naive Bayes
-  - Dimensionality Reduction
-  - Gaussian Mixture
+- K-means Clustering
+- Naive Bayes
+- Dimensionality Reduction (PCA)
+- Gaussian Mixture Models (GMM)
 
 ## 📚 Features
 - Detailed Jupyter notebooks with step-by-step explanations
