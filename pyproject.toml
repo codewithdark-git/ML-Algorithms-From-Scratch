@@ -1,0 +1,46 @@
+[project]
+name = "ml-from-scratch"
+version = "0.2.0"
+description = "Companion codebase for *Building Machine Learning Algorithms from First Principles*"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "scikit-learn>=1.4",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "mypy>=1.9",
+    "jupyter>=1.1",
+]
+pinn = [
+    "torch>=2.1",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ml_from_scratch*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit", "tests/invariants", "tests/parity", "tests/smoke", "topics"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers"
+markers = [
+    "slow: tests that take more than a few seconds",
+    "parity: compares a from-scratch estimator to a sklearn baseline",
+    "invariant: structural or mathematical invariant tests",
+    "smoke: end-to-end smoke tests",
+]
+python_files = ["test_*.py", "test_ch*_ex*.py"]

@@ -1,0 +1,71 @@
+name: ML CI/CD Pipeline
+'on':
+  push:
+    branches:
+    - main
+    - develop
+  pull_request:
+    branches:
+    - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Lint
+      run: ruff check src/ topics/
+    - name: Type check
+      run: mypy src/ --ignore-missing-imports
+    - name: Run tests
+      run: pytest topics/ -v --tb=short
+  train:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Train models
+      run: python scripts/train.py
+    - name: Upload model artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: models
+        path: artifacts/
+  evaluate:
+    runs-on: ubuntu-latest
+    needs: train
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: models
+        path: artifacts/
+    - name: Evaluate models
+      run: python scripts/evaluate.py
+  deploy:
+    runs-on: ubuntu-latest
+    needs: evaluate
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Deploy to staging
+      run: echo 'Deploy to staging...'
+    - name: Smoke test
+      run: python scripts/smoke_test.py
+    - name: Deploy to production
+      run: echo 'Deploy to production...'
