@@ -1,0 +1,2 @@
+# Optional dependencies for Chapter 15 PINN exercises.
+torch>=2.1

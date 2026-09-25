@@ -1,0 +1,111 @@
+_wandb:
+    value:
+        cli_version: 0.28.2
+        e:
+            bwo74g785dvff5jvzsylwgmxdtfmab82:
+                args:
+                    - --data-path
+                    - /data/subcop/skin_cancer
+                    - --output-dir
+                    - /data/subcop/outputs/latest
+                    - --config-path
+                    - /root/projects/subcop/config.yaml
+                    - --epochs
+                    - "300"
+                    - --lr
+                    - "0.01"
+                    - --use-wandb
+                    - --hf-repo
+                    - codewithdark/medresearch-subcop-single-site
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 17
+                cpu_count_logical: 17
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "9223372036854771712"
+                        used: "4857856"
+                email: 232552@icp.edu.pk
+                executable: /usr/local/bin/python
+                gpu: NVIDIA L4
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 7424
+                      memoryTotal: "24152899584"
+                      name: NVIDIA L4
+                      uuid: GPU-630415c1-b035-7843-0225-bba79ef7f777
+                host: modal
+                memory:
+                    total: "194617872384"
+                os: Linux-4.19.0-gvisor-x86_64-with-glibc2.36
+                program: /root/projects/subcop/main.py
+                python: CPython 3.11.12
+                root: /root/projects/subcop
+                startedAt: "2026-08-20T04:58:09.220954Z"
+                writerId: bwo74g785dvff5jvzsylwgmxdtfmab82
+        m: []
+        python_version: 3.11.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 49
+                - 51
+                - 53
+            "3":
+                - 2
+                - 16
+                - 41
+                - 61
+                - 78
+            "4": 3.11.12
+            "5": 0.28.2
+            "12": 0.28.2
+            "13": linux-x86_64
+alpha:
+    value: 0.1
+calibration_methods:
+    value:
+        - split
+        - mondrian
+        - aps
+        - raps
+compute_bootstrap_ci:
+    value: true
+compute_fairness_metrics:
+    value: true
+conformal_methods:
+    value:
+        - split
+        - mondrian
+        - aps
+        - raps
+data_regime:
+    value: single_site
+epochs:
+    value: 300
+group_definition:
+    value: site
+harmonized_label:
+    value: disease
+lr:
+    value: 0.01
+min_calibration_per_group:
+    value: 50
+n_bootstrap_ci:
+    value: 200
+pool_datasets:
+    value: false
+raps_kreg:
+    value: 3
+raps_lam:
+    value: 0.01
+seed:
+    value: 43
